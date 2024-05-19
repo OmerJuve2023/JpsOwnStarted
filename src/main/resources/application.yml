@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: jps-spring-boot
+  main:
+    banner-mode: off
+
+server:
+  port: 5000
+logging:
+  level:
+    com.omersolutions.jpsownstarted: DEBUG
