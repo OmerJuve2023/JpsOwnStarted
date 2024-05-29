@@ -19,11 +19,13 @@ public class JsonPlaceholderServiceConfiguration {
 
     @Bean("jsonPlaceHolderRestClient")
     RestClient restClient(RestClient.Builder builder) {
+        log.info("Created RestClient with base URL: {}", properties.url());
         return builder.baseUrl(properties.url()).build();
     }
 
     @Bean("jpsTodoClient")
     JpsTodoClient jpsTodoClient(RestClient restClient) {
+        log.info("Created JpsTodoClient");
         return new JpsTodoClient(restClient);
     }
 }

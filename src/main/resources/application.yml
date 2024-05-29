@@ -4,8 +4,6 @@ spring:
   main:
     banner-mode: off
 
-server:
-  port: 5000
 logging:
   level:
     com.omersolutions.jpsownstarted: DEBUG
